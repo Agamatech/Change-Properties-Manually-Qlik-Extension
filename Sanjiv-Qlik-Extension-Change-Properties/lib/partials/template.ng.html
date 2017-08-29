@@ -1,0 +1,26 @@
+<div qv-extension class="qv-object-qssample-changeproperties">
+
+	<p>
+		<b>This Example is how to make changes to properties programmatically:</b><br/>
+		Change the value in the text box, then go back to edit mode and see if the property has changed.<br/><br/>
+	</p>
+
+	<p>
+		<input type="text" id="{{layout.qInfo.qId}}_text1" ng-model="layout.props.stringProp"/>
+	</p>
+
+	<p>
+		<b>Available Options:</b>
+	<ul>
+		<li><button class="btn" ng-click="useSetProperties()">Set Properties</button></li> <!--Here you can remove "ng-click" and use "qva-activate"you can use. We have more qlik-specific events, but only for internal use, so there is no documentation available. -->
+		<li><button class="btn" ng-click="useApplyPatches( false )">Apply Patches, softPatches=false</button></li>
+		<li><button class="btn" ng-click="useApplyPatches( true )">Apply Patches, softPatches=true</button></li>
+		<li><button class="btn" ng-click="useSaveChanges()">Save Changes</button></li>
+	</ul>
+	</p>
+<!--This bottom line only for testing purpose to see which layout is going to effect-->
+	<p>
+		<b>Current scope (layout.props.stringProp):</b><br/>
+		<code>{{layout.props.stringProp}}</code>
+	</p>
+</div>

@@ -1,0 +1,9 @@
+{
+	"name" : "Sanjiv Created Change Properties",
+	"description" : "Sanjiv created how to change custom properties programmatically.",
+	"icon" : "extension",
+	"type" : "visualization",
+	"version": "@@version",
+	"preview" : "agmatechBasicExtension.png",
+	"author": "Sanjiv Srivastava"
+}
